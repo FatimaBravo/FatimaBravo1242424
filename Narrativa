@@ -1,0 +1,36 @@
+import turtle
+
+# Definir el tamaño de la pantalla
+pantalla = turtle.Screen()
+pantalla.setup(width=800, height=600)
+pantalla.bgcolor("lightblue")
+
+# Crear el objeto tortuga
+tortuga = turtle.Turtle()
+tortuga.speed(0)
+tortuga.pensize(3)
+
+# Dibujar el círculo central del sol
+tortuga.penup()
+tortuga.goto(10, 110)
+tortuga.pendown()
+tortuga.fillcolor("yellow")
+tortuga.begin_fill()
+tortuga.circle(50)
+tortuga.end_fill()
+
+# Dibujar los rayos del sol
+tortuga.penup()
+tortuga.goto(0, 50)
+tortuga.setheading(0)
+
+for i in range(36):
+    tortuga.pendown()
+    tortuga.forward(100)
+    tortuga.penup()
+    tortuga.backward(80)
+    tortuga.left(10)
+
+# Mantener la ventana abierta hasta que se cierre manualmente
+pantalla.exitonclick()
+

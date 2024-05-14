@@ -1,0 +1,48 @@
+print ("Semana No. 12: Ejercicio 1")
+print ("a.sumatoria" , "b.Factorial" , "c. Tablas de multiplicar", "d. Numero perfecto, sep =")
+
+opcion = input("Ingrese la letra de su opcion: ")
+
+match opcion: 
+      case "a":
+            print("a")
+      case "b": 
+            print("a")
+      case "c":
+            
+
+
+print ("Semana No. 12: Ejercicio 2")
+print ("a.sumatoria" , "b.Factorial" , "c. Tablas de multiplicar", "d. Numero perfecto, sep =")
+
+opcion = input("Ingrese la letra de su opcion: ")
+
+match opcion: 
+    case "a":
+        n = int(input("Ingrese un numero entero positivo"))
+        if(n>0):
+            sumatoria = 0
+        i = 1
+        for cont in range(1, n+1):
+            sumatoria += cont 
+            print("Sumatoria es:", sumatoria)
+        else: 
+              print("Error, el numero debe ser mayor a cero")
+        
+    case "b":
+        print("Tarea")
+
+    case "c":
+       tituloColumnas = "/t"
+for i in rage (1,11):
+            tituloColumnas = tituloColumnas + str(i)
+            print(tituloColumnas) 
+for filas in range(1,11):
+            cadenaFila = str(filas)+ "\t" 
+for columnas in range(1,11):
+            cadenaFila=cadenafila+ str(filas*columnas)+ "/t"
+            print(filas) 
+
+    #case "d":
+print("Tarea")
+
